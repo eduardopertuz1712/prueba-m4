@@ -1,0 +1,4 @@
+- mysql2
+- csv-parser
+- express
+- dotenv
