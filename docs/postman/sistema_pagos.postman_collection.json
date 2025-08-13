@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "9a68d4fd-c365-428c-97c3-ae1bbd2fe1e6",
+		"name": "sistema_pagos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47519904",
+		"_collection_link": "https://davin-coder-3173120.postman.co/workspace/Davin's-Workspace~40767cc4-48db-4a4c-8ca0-b3c89084db1e/collection/47519904-9a68d4fd-c365-428c-97c3-ae1bbd2fe1e6?action=share&source=collection_link&creator=47519904"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "get all clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get clientes by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clientes/325459712",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"325459712"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numero_identificacion\": \"325459712\",\r\n    \"nombre_cliente\": \"Alex Tuiran\",\r\n    \"direccion\": \"Calle 16 #20-12\",\r\n    \"telefono\": \"3054826210\",\r\n    \"email\": \"alextuiran8@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update client",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre_cliente\": \"Alex David\",\r\n    \"direccion\": \"Calle 16 #20-12\",\r\n    \"telefono\": \"3054826210\",\r\n    \"email\": \"alextuiran8@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/clientes/325459712",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"325459712"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/clientes/325459712",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"325459712"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
